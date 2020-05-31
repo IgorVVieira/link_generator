@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <header id="header">
+        Link Redirect
+    </header>
+
+    <div class="product-list">
+        <article>
+            <strong>Bem vindo ao Link Redirect!</strong>
+            <p>Um sistema Web capaz de gerar links automatizados para seu Whatsapp</p>
+            <p>Para criar seu link siga os passsos: 👇</p>
+            <p> - Preencha o telefone com DDD (Não apague o 55)</p>
+            <p> - A seguir insira a mensagem desejada</p>
+            <p> - Pronto!! Agora só copiar o seu link ou clicar nele para usar! 😁👩‍💻 </p>
+        </article>
+
+        <section class="form hide">
+            <h2>Gerar seu Link</h2>
+            <form action="/send" method="POST">
+                <input type="number" placeholder="Telefone" required name="phone" value="55">
+
+                <input type="text" placeholder="Mensagem" required name="text">
+                <button type="submit">Obter Link</button>
+            </form>
+        </section>
+
+        <article>
+            <p id="copiar"> <a href="<%= baseUrl %>"> <%= baseUrl %> </a></p>
+        </article>
+
+        <footer>Feito com ❤ por IgorVVieira</footer>
+</body>
+
+</html>
