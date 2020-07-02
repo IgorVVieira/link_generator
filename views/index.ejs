@@ -14,7 +14,7 @@
         Link Redirect
     </header>
 
-    <div class="product-list">
+    <div class="main">
         <article>
             <strong>Bem vindo ao Link Redirect!</strong>
             <p>Um sistema Web capaz de gerar links automatizados para seu Whatsapp</p>
@@ -27,7 +27,7 @@
         <section class="form hide">
             <h2>Gerar seu Link</h2>
             <form action="/send" method="POST">
-                <input type="number" placeholder="Telefone" required name="phone" value="55">
+                <input type="number" placeholder="Telefone" required name="phone" value="55" maxlength="13">
 
                 <input type="text" placeholder="Mensagem" required name="text">
                 <button type="submit">Obter Link</button>
@@ -35,7 +35,7 @@
         </section>
 
         <article>
-            <p id="copiar"> <a href="<%= baseUrl %>"> <%= baseUrl %> </a></p>
+            <p id="copiar"> <a href="<%= baseUrl %>"> <%= baseUrl %> </a> <br> Sua URL personalizada 🙌☝</p>
         </article>
 
         <footer>Feito com ❤ por IgorVVieira</footer>

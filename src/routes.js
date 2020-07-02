@@ -18,7 +18,7 @@ routes.post('/send', (req, res) => {
         return url;
     }
 
-    let baseUrl = templateUrl(phone, text);
+    const baseUrl = templateUrl(phone, text);
     return res.render('index', {
         baseUrl
     });
